@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+
+    <main>
+      <section class="add-task">
+        <h2>Kegiatan Apa Yang Harus Dilakukan?</h2>
+        <form id="form">
+          <div class="form-group">
+            <input id="title" type="text" placeholder="Masukkan hal yang akan dilakukan">
+            <input id="date" type="date" placeholder="Masukkan tanggal harus selesai">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="tasks">
+        <div class="task-list">
+          <h2 class="container-header">Yang harus dilakukan</h2>
+          <div class="list-items" id="todos"></div>
+        </div>
+
+        <div class="task-list">
+          <h2 class="container-header">Yang sudah dilakukan</h2>
+          <div class="list-items" id="completed-todos"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
